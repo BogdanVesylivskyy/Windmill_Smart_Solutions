@@ -1,0 +1,352 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?1x6v87');
+    src:  url('fonts/icomoon.eot?1x6v87#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?1x6v87') format('truetype'),
+      url('fonts/icomoon.woff?1x6v87') format('woff'),
+      url('fonts/icomoon.svg?1x6v87#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    background: #282828;
+}
+
+#breadcrumb {
+    padding: 11px 16px;
+    margin: 0;
+    list-style: none;
+    width: calc(50% - 59px);
+    margin-left: 59px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    background-color: #505050;
+}
+
+#breadcrumb li {
+    display: inline;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+#breadcrumb li+li:before {
+    padding: 8px  8px 8px 0px;
+    color: #fff;
+    font-family: "icomoon";
+    content: "\ea50";
+    font-size: 20px;
+}
+
+#breadcrumb li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#breadcrumb li a:hover {
+    color: #282828;
+    text-decoration: underline;
+}
+
+#search {
+    padding: 17px 16px;
+    margin: 0;
+    width: 50%;
+    float: right;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #505050;
+}
+
+#search input { 
+    width: 100%;
+    margin: 0;
+    height: 24px;
+    border: none;
+    padding: 0px 25px 0px 40px;
+    background: #707070;
+    color: #fff;
+}
+
+#search:before {
+    padding: 5px;
+    color: #fff;
+    font-family: "icomoon";
+    content: "\e986";
+    font-size: 13px;
+    left: 24px;
+    top: 18px;
+    position: absolute;
+}
+
+#search:after {
+    padding: 5px;
+    color: #fff;
+    font-family: "icomoon";
+    content: "\ea1c";
+    font-size: 9px;
+    right: 18px;
+    top: 20px;
+    position: absolute;
+}
+
+#search input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+#search input::-moz-placeholder {
+    color: #fff;
+}
+
+#search input:-ms-input-placeholder {
+    color: #fff;
+}
+
+#search input:-moz-placeholder {
+    color: #fff;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus{
+    border: 1px solid #fff;
+    -webkit-text-fill-color: #fff;
+    -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+    transition: background-color 5000s ease-in-out 0s;
+    width: 100%;
+    background-image: none!important;
+}
+
+input:focus{
+    outline: none;
+    box-shadow: 0 0 5px rgba(40, 40, 40, 1);
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid rgba(40, 40, 40, 1);
+}
+
+#header {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    z-index: 3;
+}
+
+.sidenav {
+    margin-top: -58px;
+}
+
+.sidenav ul.menu {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+  
+.sidenav ul.menu li a {
+    display: block;
+    padding: 0px 18px;
+    min-width: 140px;
+    margin: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: none;
+}
+
+.sidenav ul.menu li.navicon:hover{
+    position: relative;
+}
+  
+.sidenav ul.menu li.navicon:hover > a {
+    position: absolute;
+    top: 0px;
+    left: 59px;
+    background: #3a3a3a;
+    width: auto;
+    padding: 20px 0px 19px 0px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+  
+.sidenav .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.sidenav .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    padding: 16px 18px 16px;
+    position: relative;
+    user-select: none;
+    background: #202020;
+}
+
+
+.sidenav .menu-icon .navicon:before  {
+    color: #fff;
+    font-family: "icomoon";
+    content: "\e9bd";
+    font-size: 23px;
+}
+  
+
+.sidenav .menu-btn {
+    display: none;
+}
+  
+.sidenav .menu-btn:checked ~ .menu {
+    max-height: 100%;
+    margin: 0;
+    background: #6f6d6d;
+}
+  
+.sidenav .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+
+.sidenav .menu-btn:checked ~ .menu-icon .navicon:before {
+    content: "\ea40";
+}
+
+.sidenav .menu-btn:checked ~ .menu li.navicon a {
+    display: block!important;
+}
+
+.sidenav li {
+    background: #202020;
+    padding: 16px 0px 16px 18px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.sidenav li > a {
+    color: #505050;
+    width: 100%;
+    font-size: 13px;
+}
+
+.sidenav li.navicon:before  {
+    color: #cccccc;
+    font-family: "icomoon";
+    font-size: 23px;
+}
+
+.sidenav li:hover  {
+    background: #3a3a3a;
+    cursor: pointer;
+}
+.sidenav li:hover a {
+    color: #505050;
+}
+
+.sidenav li.navicon:before {
+    color: #505050;
+}
+
+.sidenav li.navicon:hover:before {
+    content: "\ea5b";
+    color: #fff;
+    z-index: 1;
+}
+
+.sidenav li.navicon:nth-child(1):before {
+    content: "\ea5b";
+}
+.sidenav li.navicon:nth-child(2):before {
+    content: "\e9ae";
+}
+.sidenav li.navicon:nth-child(3):before {
+    content: "\e972";
+}
+
+.content {
+    background: #f4f4f4;
+    order: 1;
+    flex: 0 1 100%;
+    min-height: calc(100vh - 58px);
+    box-sizing: border-box;
+    padding: 20px;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrap {
+    background: #202020;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    top: 58px;
+    z-index: -1;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    display: flex;
+    height: 100%;
+    -webkit-flex: 5;
+    flex: 5;
+}
+
+
+.content img{
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-animation: mymove 2s infinite;
+    animation: mymove 2s infinite;
+}
+
+#b {
+    display: block;
+    box-sizing: border-box;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background-color: #aaa;
+    -webkit-animation: mymove 10s infinite;
+    animation: mymove 10s infinite;
+}
+  
+@-webkit-keyframes mymove {
+    40%   {transform: rotateY(0deg);}
+    50% {transform: rotateY(180deg);}
+    90% {transform: rotateY(180deg);}
+    100% {transform: rotateY(0deg);}
+}
+
+@media only screen and (max-width: 767px) {
+    #search {
+        width: calc(100% - 59px);
+        padding: 0px 16px 7px;
+    }
+
+    #search:before {
+        top: 0px;
+    }
+
+    #search:after {
+        top: 0px;
+    }
+
+    ul#breadcrumb {
+        width: calc(100% - 59px);
+        padding: 0px 16px;
+        line-height: 16px;
+    }
+
+    #breadcrumb li {
+        font-size: 12px;
+    }
+
+    .sidenav {
+        margin-top: -62px;
+    }
+}
