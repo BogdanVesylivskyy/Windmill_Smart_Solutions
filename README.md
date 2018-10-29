@@ -1,11 +1,10 @@
-# Windmill_Smart_Solutions_Test_Task
+# Test_Task
 
 <a href="https://www.windmillsmartsolutions.com/">Windmill_Smart_Solutions</a>
 
 ## Author:
 
-[Bogdan Vesylivskyy](https://www.linkedin.com/in/vesylivskyy-bogdan-961b371a/) &
-[e-mail](vesylivskyy@gmail.com)  
+[Bogdan Vesylivskyy](https://www.linkedin.com/in/vesylivskyy-bogdan-961b371a/) 
 
 **Badges will go here**
 
