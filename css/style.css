@@ -163,11 +163,11 @@ input:focus{
 .sidenav ul.menu li.navicon:hover > a {
     position: absolute;
     top: 0px;
-    left: 61px;
+    left: 59px;
     background: #3a3a3a;
     /* width: auto; */
-    width: calc(100% - 61px);
-    padding: 20px 0px 19px 0px;
+    width: calc(100% - 59px);
+    padding: 20px 0px 19px 3px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -239,7 +239,7 @@ input:focus{
     color: #cccccc;
     font-family: "icomoon";
     font-size: 23px;
-    min-width: 25px;
+    min-width: 26px;
     min-height: 23px;
 }
 
